@@ -1,8 +1,12 @@
 ﻿using Ardalis.ApiEndpoints;
 using MediatR;
 using MediatRExample.Queries;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Logging;
 using Swashbuckle.AspNetCore.Annotations;
+using System.Threading;
+using System.Threading.Tasks;
 using static MediatRExample.Queries.QueryWeatherForeCast;
 
 namespace MediatRExample.Controllers;

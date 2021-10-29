@@ -4,6 +4,11 @@ using System.Reflection;
 using static MediatRExample.Queries.QueryWeatherForeCast;
 using System.Security.Policy;
 using MediatRExample.Repository;
+using Microsoft.AspNetCore.Builder;
+using System;
+using System.Linq;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Hosting;
 
 var builder = WebApplication.CreateBuilder(args);
 
